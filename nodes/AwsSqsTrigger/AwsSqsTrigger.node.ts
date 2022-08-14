@@ -38,7 +38,7 @@ export class AwsSqsTrigger implements INodeType {
 		],
 		properties: [
 			{
-				displayName: 'Queue',
+				displayName: 'Queue Name or ID',
 				name: 'queue',
 				type: 'options',
 				typeOptions: {
@@ -47,7 +47,7 @@ export class AwsSqsTrigger implements INodeType {
 				options: [],
 				default: '',
 				required: true,
-				description: 'Queue to receive messages from',
+				description: 'Queue to receive messages from. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code-examples/expressions/">expression</a>.',
 			},
 			{
 				displayName: 'Interval',

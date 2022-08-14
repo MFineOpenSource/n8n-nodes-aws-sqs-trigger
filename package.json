@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "description": "N8N SQS Trigger Node",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "n8n-nodes",
+    "aws",
+    "sqs",
+    "trigger"
   ],
-  "license": "Apache 2.0",
+  "license": "MIT",
   "homepage": "https://github.com/MFineOpenSource",
   "author": {
     "name": "Prasenjit Ghoshal",
@@ -20,9 +24,9 @@
     "build": "tsc && gulp build:icons",
     "dev": "tsc --watch",
     "format": "prettier nodes credentials --write",
-    "lint": "tslint -p tsconfig.json -c tslint.json && eslint nodes credentials package.json",
-    "lintfix": "tslint --fix -p tsconfig.json -c tslint.json && eslint nodes credentials package.json --fix",
-    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    "lint": "tslint -p tsconfig.json -c tslint.json && eslint nodes package.json",
+    "lintfix": "tslint --fix -p tsconfig.json -c tslint.json && eslint nodes package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint --no-error-on-unmatched-pattern -c .eslintrc.prepublish.js nodes package.json"
   },
   "files": [
     "dist"
