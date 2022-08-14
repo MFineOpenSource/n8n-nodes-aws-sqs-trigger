@@ -19,4 +19,4 @@ You need the following installed on your development machine:
 
 ## License
 
-Apache 2.0
+MIT
